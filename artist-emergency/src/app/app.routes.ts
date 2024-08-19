@@ -9,7 +9,7 @@ export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home if no path is specified
     { path: 'home', component: HomeComponent },
     { path: 'features', component: FeaturesComponent},
-    { path: 'addProfile', component: ProfileComponent},
-    { path: 'artistForm', component: ArtistFormComponent },
-    { path: 'managerForm', component: ManagerFormComponent }
+    { path: 'add-profile', component: ProfileComponent},
+    { path: 'artist-form', component: ArtistFormComponent },
+    { path: 'manager-form', component: ManagerFormComponent }
 ];
