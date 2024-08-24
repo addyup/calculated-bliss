@@ -1,0 +1,20 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class EventService {
+  private baseUrl = 'http://localhost:8080/api/events'; // Update the URL if needed
+
+  constructor(private http: HttpClient) {}
+
+  getDreamvilleEvents(): Observable<string> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+
+    return this.http.get(`${this.baseUrl}/dreamville`, { headers: headers, responseType: 'text' });
+  }
+}
