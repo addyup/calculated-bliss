@@ -12,7 +12,8 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/events")
-@CrossOrigin(origins = {"http://localhost:4200", "https://evented.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:4200", "https://evented.netlify.app", "https://evented.netlify.app/", 
+		"evented.netlify.app/", "https://main--evented.netlify.app/", "main--evented.netlify.app/", "main--evented.netlify.app"})
 public class EventController {
 
     @Autowired
