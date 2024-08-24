@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EventService {
-  private baseUrl = 'http://localhost:8080/api/events'; // Update the URL if needed
+  // private baseUrl = 'http://localhost:8080/api/events'; 
+
+  private baseUrl = 'https://calculated-bliss.onrender.com/api/events';
 
   constructor(private http: HttpClient) {}
 
