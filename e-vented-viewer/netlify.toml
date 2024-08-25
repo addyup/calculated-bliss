@@ -1,6 +1,6 @@
 [build]
   # The directory where the Angular build outputs are located
-  publish = "dist/my-angular-app"
+  publish = "dist/e-vented-viewer"
   
   # The build command for Angular
   command = "ng build --prod"
