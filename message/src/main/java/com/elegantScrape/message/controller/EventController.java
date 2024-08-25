@@ -11,8 +11,6 @@ import com.elegantScrape.message.service.EventScraperService;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/api/events")
-
 public class EventController {
 
     @Autowired
@@ -20,7 +18,7 @@ public class EventController {
 
 
     @CrossOrigin
-    @GetMapping("/dreamville")
+    @GetMapping("/api/events/dreamville")
     public String getEvents() {
         try {
             return eventScraperService.scrapeDreamvilleEvents().toString().replaceAll("<[^>]*>", "");
