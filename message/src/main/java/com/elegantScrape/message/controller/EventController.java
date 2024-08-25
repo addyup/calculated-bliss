@@ -1,7 +1,7 @@
 package com.elegantScrape.message.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +12,9 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/events")
-//@CrossOrigin(origins = {"http://localhost:4200", "https://evented.netlify.app", "https://evented.netlify.app/", 
-//		"evented.netlify.app/", "https://main--evented.netlify.app/", "main--evented.netlify.app/", "main--evented.netlify.app"
-//		, "https://main--evented.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:4200", "https://evented.netlify.app", "https://evented.netlify.app/", 
+		"evented.netlify.app/", "https://main--evented.netlify.app/", "main--evented.netlify.app/", "main--evented.netlify.app"
+		, "https://main--evented.netlify.app"})
 public class EventController {
 
     @Autowired
