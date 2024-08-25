@@ -15,7 +15,7 @@ export class EventService {
   getDreamvilleEvents(): Observable<string> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://evented.netlify.app',
+                'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Credentials': 'true',
                 'Access-Control-Allow-Headers': 'Content-Type',
                 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE'
