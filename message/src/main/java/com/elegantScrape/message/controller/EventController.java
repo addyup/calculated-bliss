@@ -17,7 +17,7 @@ public class EventController {
     private EventScraperService eventScraperService;
 
 
-    @CrossOrigin(origins = "*")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/api/events/dreamville")
     public String getEvents() {
         try {
