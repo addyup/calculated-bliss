@@ -6,7 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MyServiceService {
-  private apiUrl = 'http://localhost:8080/api/tickets/scrape'; 
+  // private apiUrl = 'http://localhost:8080/api/tickets/scrape'; 
+
+    private apiUrl = 'https://calculated-bliss.onrender.com/api/tickets/scrape';
+
 
   constructor(private http: HttpClient) {}
 
