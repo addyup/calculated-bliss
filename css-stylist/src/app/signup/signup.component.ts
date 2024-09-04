@@ -10,19 +10,19 @@ import { FormsModule } from '@angular/forms';
   standalone: true
 })
 export class SignupComponent {
-  artist = {
-    name: '',
-    email: '',
-    date: '',
-    time: ''
-  };
+  // artist = {
+  //   name: '',
+  //   email: '',
+  //   date: '',
+  //   time: ''
+  // };
 
-  constructor(private http: HttpClient) {}
+  // constructor(private http: HttpClient) {}
 
-  onSubmit() {
-    this.http.post('http://localhost:8080/api/artists', this.artist)
-      .subscribe(response => {
-        console.log('Artist registered:', response);
-      });
-  }
+  // onSubmit() {
+  //   this.http.post('http://localhost:8080/api/artists', this.artist)
+  //     .subscribe(response => {
+  //       console.log('Artist registered:', response);
+  //     });
+  // }
 }
