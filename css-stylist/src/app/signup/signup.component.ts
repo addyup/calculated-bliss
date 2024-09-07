@@ -25,7 +25,7 @@ export class SignupComponent {
       'Authorization': 'Bearer your-auth-token'  // Example of adding an Authorization header
     });
 
-    this.http.post('http://localhost:8080/user/submit', this.artist, { headers })
+    this.http.post('https://calculated-bliss.onrender.com/user/submit', this.artist, { headers })
       .subscribe(response => {
         console.log('Artist registered:', response);
       });
