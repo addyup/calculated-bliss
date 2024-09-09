@@ -22,7 +22,8 @@ export class SignupComponent {
   onSubmit() {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token'  // Example of adding an Authorization header
+      'Authorization': 'Bearer your-auth-token'
+      ,'Access-Control-Allow-Origin': '216.24.57.4:443'
     });
 
     this.http.post('https://calculated-bliss.onrender.com/user/submit', this.artist, { headers })
