@@ -21,7 +21,6 @@ import com.elephantScrape.demo.repository.UserDetailsRepository;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin
 public class UserController {
 
     @Autowired
