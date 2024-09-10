@@ -1,4 +1,4 @@
 [[headers]]
-for = “/"
+for = “/signup"
 [headers.values]
 Access-Control-Allow-Origin = "*”
