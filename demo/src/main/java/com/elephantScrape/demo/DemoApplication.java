@@ -22,7 +22,7 @@ public class DemoApplication {
 		return new WebMvcConfigurer() 
 		{
 			public void addCorsMapping(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("*");
+				registry.addMapping("/**").allowedOrigins("http://localhost:4200", "https://evented.netlify.app");
 			}
 		};
 		
