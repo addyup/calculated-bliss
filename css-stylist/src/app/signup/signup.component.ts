@@ -19,10 +19,12 @@ export class SignupComponent {
 
   constructor(private http: HttpClient) {}
 
+  
+
   onSubmit() {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': 'https://evented.netlify.app'
     });
 
     this.http.post('https://calculated-bliss.onrender.com/user/submit', this.artist, { headers })
