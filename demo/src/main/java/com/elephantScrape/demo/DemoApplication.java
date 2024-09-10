@@ -15,17 +15,5 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	
-	@Bean
-	public WebMvcConfigurer corsConfigurer() 
-	{
-		return new WebMvcConfigurer() 
-		{
-			public void addCorsMapping(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:4200", "https://evented.netlify.app");
-			}
-		};
-		
-	}
 
 }
