@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class BillboardService {
-  private apiUrl = 'https://calculated-bliss.onrender.com/api/billboard/top-songs';
+  private apiUrl = 'https://calculated-bliss.onrender.com/top-songs';
 
   constructor(private http: HttpClient) {}
 
