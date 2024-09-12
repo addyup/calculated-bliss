@@ -14,3 +14,10 @@
     </div>
   </nav>
 <h2 style="font-family: cursive; color: purple;">Scroll all the way down for pitcures and to learn about us!</h2>
+
+<div *ngIf="songs.length > 0">
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: silver;">Top Songs from Billboard</h2>
+  <ul>
+    <li *ngFor="let song of songs" style="color: orange; font-family: cursive;">{{ song }}</li>
+  </ul>
+</div>
