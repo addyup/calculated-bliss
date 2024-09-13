@@ -14,12 +14,5 @@ export class NavbarComponent {
 
   constructor(private billboardService: BillboardService) {}
 
-  ngOnInit(): void {
-    this.billboardService.getTopSongs().subscribe((data) => {
-      this.songs = data.filter(song => 
-        !song.includes('Imprint/Promotion Label:') && 
-        !song.includes('Additional Awards')
-      );
-    });
-  }
+  
 }
