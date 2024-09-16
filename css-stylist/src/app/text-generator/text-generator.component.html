@@ -1,0 +1,11 @@
+<div>
+    <h2>Text Generator</h2>
+    <textarea [(ngModel)]="prompt" rows="4" cols="50" placeholder="Enter prompt"></textarea>
+    <br />
+    <button (click)="generateText()">Generate Text</button>
+    @if(generatedText){<div>
+      <h3>Generated Text:</h3>
+      <p>{{ generatedText }}</p>
+    </div> }
+  </div>
+  
