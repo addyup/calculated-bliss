@@ -12,7 +12,7 @@ export interface MandeerEvent {
   providedIn: 'root',
 })
 export class EventService {
-  private apiUrl = 'http://localhost:8080/api/events/upcoming'; // Update with the correct URL if deployed
+  private apiUrl = 'https://web-scrapius.onrender.com/api/events/upcoming'; // Update with the correct URL if deployed
 
   constructor(private http: HttpClient) {}
 
