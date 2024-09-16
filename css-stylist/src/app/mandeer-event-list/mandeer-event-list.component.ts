@@ -17,12 +17,17 @@ export class MandeerEventListComponent implements OnInit {
 
   ngOnInit(): void {
     this.eventService.getUpcomingEvents().subscribe(
-      (data) => {
-        this.events = data;
+      (data: any[]) => {
+        // Remove duplicate elements
+        this.events = data.filter((value, index, self) => 
+          index === self.findIndex((t) => t === value)
+        );
       },
       (error) => {
         console.error('Error fetching events:', error);
       }
     );
   }
+  
+  
 }
