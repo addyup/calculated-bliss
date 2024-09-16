@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /websc
 
 # Copy the Spring Boot application JAR file to the container
 COPY target/websc-0.0.1-SNAPSHOT.jar app.jar
