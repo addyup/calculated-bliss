@@ -12,7 +12,19 @@ public class Candidate {
     
     private String currentLocation;
     
-    public String getPositionType() {
+    private String email;
+    
+    
+    
+    public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPositionType() {
 		return positionType;
 	}
 

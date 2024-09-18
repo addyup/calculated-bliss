@@ -18,7 +18,8 @@ export class CandidateCbeFormComponent {
     positionType: '',
     openForRelocation: false,
     currentLocation: '',
-    visaStatus: ''
+    visaStatus: '',
+    email: ''
   };
 
   responseMessage = '';
