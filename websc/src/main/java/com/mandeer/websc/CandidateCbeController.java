@@ -30,7 +30,7 @@ public class CandidateCbeController {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo("adwait.uprety@gmail.com");
         message.setSubject("APP-CONT-FT - Candidate Information");
-
+//yext
         String emailContent = "Position Type: " + candidate.getPositionType() + "\n" +
                               "First Name: " + candidate.getFirstName() + "\n" +
                               "Last Name: " + candidate.getLastName() + "\n" +
