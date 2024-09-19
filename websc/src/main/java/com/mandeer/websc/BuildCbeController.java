@@ -1,6 +1,7 @@
 package com.mandeer.websc;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mandeer.websc.model.BuildDetails;
 
 @RestController
+@CrossOrigin
 public class BuildCbeController {
 
     private final EmailBuildCbeService emailService;
