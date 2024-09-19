@@ -1,6 +1,9 @@
 com/mandeer/websc/model/Candidate.class
 com/mandeer/websc/model/Event.class
+com/mandeer/websc/BuildCbeController.class
+com/mandeer/websc/model/BuildDetails.class
 com/mandeer/websc/MandeerScraperService.class
+com/mandeer/websc/EmailBuildCbeService.class
 com/mandeer/websc/WebscApplication.class
 com/mandeer/websc/CandidateCbeController.class
 com/mandeer/websc/MandeerController.class

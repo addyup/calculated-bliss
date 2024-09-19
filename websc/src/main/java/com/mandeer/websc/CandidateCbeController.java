@@ -36,7 +36,7 @@ public class CandidateCbeController {
                               "Last Name: " + candidate.getLastName() + "\n" +
                               "Open for Relocation: " + (candidate.isOpenForRelocation() ? "Yes" : "No") + "\n" +
                               "Current Location: " + candidate.getCurrentLocation() + "\n" +
-                              "Visa Status: " + candidate.getVisaStatus() +
+                              "Visa Status: " + candidate.getVisaStatus() + "\n" +
                               "Email: " + candidate.getEmail();
 
         message.setText(emailContent);

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CandidateCbeFormComponent } from '../candidate-cbe-form/candidate-cbe-form.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,12 @@ import { CandidateCbeFormComponent } from '../candidate-cbe-form/candidate-cbe-f
   styleUrl: './navbar.component.less'
 })
 export class NavbarComponent {
-  songs: string[] = [];
+
+  constructor(private router: Router) {}
+
+  navigateToForm() {
+    this.router.navigate(['/builder-form']);
+  }
 
 
   
